@@ -1,18 +1,21 @@
 <?php
 
-namespace App\Controllers;
+    namespace App\Controllers;
+    use App\Controllers\BaseController;
 
-use App\Controllers\BaseController;
+    class DashboardController extends BaseController
+    {    
+        public function index()
+        {
+            return view('dashboard/index');
+        }
 
-class DashboardController extends BaseController
-{
-    public function index()
-    {
-        return view('dashboard/index');
+        public function barang()
+        {
+            return view('dashboard/Barang');
+        }
     }
 
-    public function barang()
-    {
-        return view('dashboard/Barang');
-    }
-}
+    
+
+?>
